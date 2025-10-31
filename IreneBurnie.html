@@ -1,1 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Ensemble Project Hub | Mrs. Burnie's Music Class</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #fef7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            color: #7a2c4d;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        nav {
+            background-color: #d94a78;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #b33764;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-top: 4px solid #ff9a9e;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+            color: #d94a78;
+        }
+
+        h1 {
+            color: #7a2c4d;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-top: 0.5rem;
+            color: #7a2c4d;
+        }
+
+        .step {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #f9dde4;
+        }
+
+        .step:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            display: inline-block;
+            background-color: #d94a78;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+        }
+
+        .tip-box {
+            background-color: #fce4ec;
+            border-left: 4px solid #d94a78;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .software-icon {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #d94a78;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Virtual Ensemble Project Hub</h1>
+            <p class="subtitle">Your complete guide to creating amazing music with digital tools</p>
+            <p>By Mrs. Burnie</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#musicscore">MuseScore</a></li>
+            <li><a href="#bandlab">BandLab</a></li>
+            <li><a href="#garageband">GarageBand</a></li>
+            <li><a href="#recording">Recording Basics</a></li>
+            <li><a href="#mixing">Mixing Techniques</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="card">
+            <h2>Welcome to Your Virtual Ensemble Project!</h2>
+            <p>This website is your go-to resource for creating your virtual ensemble performance. Here you'll find step-by-step guides for all the software we'll be using, plus essential tips for recording and mixing your project.</p>
+            <p>Whether you're arranging your piece, recording your part, or putting everything together, these resources will help you create a professional-sounding final product.</p>
+            
+            <div class="tip-box">
+                <h3>Project Timeline</h3>
+                <ul>
+                    <li><strong>Weeks 1-2:</strong> Song selection, analysis, and arrangement using MuseScore</li>
+                    <li><strong>Weeks 3-4:</strong> Recording individual parts using GarageBand or BandLab</li>
+                    <li><strong>Weeks 5-6:</strong> Mixing, video creation, and final submission</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="musicscore" class="card">
+            <div class="software-icon">🎼</div>
+            <h2>MuseScore Guide: Creating Your Arrangement</h2>
+            <p>MuseScore is free notation software that we'll use to create scores and parts for our virtual ensemble.</p>
+            
+            <div class="step">
+                <h3><span class="step-number">1</span> Setting Up Your Score</h3>
+                <p>Open MuseScore and create a new score. Select the instruments needed for your arrangement. You can always add or remove instruments later.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">2</span> Inputting Notes</h3>
+                <p>Use the note input toolbar to select note values, then click on the staff where you want to place them. Use the keyboard numbers 1-9 to quickly switch between note durations.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">3</span> Adding Dynamics and Expression</h3>
+                <p>Use the Palettes (F9) to find dynamics, articulations, and expression markings. Drag these onto your score to make your arrangement more expressive.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">4</span> Creating Parts</h3>
+                <p>Once your full score is complete, use File → Parts to create individual parts for each instrument in your ensemble.</p>
+            </div>
+            
+            <div class="tip-box">
+                <h3>Pro Tip</h3>
+                <p>Use the playback feature frequently to check how your arrangement sounds. This helps identify awkward passages or errors in your notation.</p>
+            </div>
+        </section>
+
+        <section id="bandlab" class="card">
+            <div class="software-icon">🎹</div>
+            <h2>BandLab Guide: Online Music Creation</h2>
+            <p>BandLab is a free, browser-based Digital Audio Workstation (DAW) perfect for our collaborative project.</p>
+            
+            <div class="step">
+                <h3><span class="step-number">1</span> Starting a New Project</h3>
+                <p>Create a BandLab account and start a new project. Give it a descriptive name related to your virtual ensemble piece.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">2</span> Recording Audio</h3>
+                <p>Click the "+" button to add a new audio track. Make sure your microphone is selected, press record, and count yourself in before playing.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">3</span> Using Loops and Virtual Instruments</h3>
+                <p>BandLab has a library of loops and virtual instruments. Use the "Sounds" tab to browse and drag loops into your project, or use the virtual keyboard to record MIDI parts.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">4</span> Collaborating</h3>
+                <p>Use the "Invite" button to add your group members to the project. Everyone can contribute their parts to the same project file.</p>
+            </div>
+            
+            <div class="tip-box">
+                <h3>Pro Tip</h3>
+                <p>Always use headphones when recording to prevent the background music from being picked up by your microphone.</p>
+            </div>
+        </section>
+
+        <section id="garageband" class="card">
+            <div class="software-icon">🎸</div>
+            <h2>GarageBand Guide: Apple's Music Studio</h2>
+            <p>GarageBand is a powerful yet user-friendly DAW available on all Apple devices.</p>
+            
+            <div class="step">
+                <h3><span class="step-number">1</span> Creating Your Project</h3>
+                <p>Open GarageBand and create a new project. Choose "Empty Project" for full control, or use a template if you want a quick start.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">2</span> Recording Your Part</h3>
+                <p>Create a new track for your instrument. Click the red record button and play along with the metronome or click track to stay in time.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">3</span> Editing Takes</h3>
+                <p>If you record multiple takes, you can create a "comp" by selecting the best parts of each take. Right-click on the recording and select "Show Take Folders."</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">4</span> Using Apple Loops</h3>
+                <p>Press the loop button (circular arrow icon) to browse Apple Loops. Drag and drop loops into your project to add drums, bass, or other accompaniment.</p>
+            </div>
+            
+            <div class="tip-box">
+                <h3>Pro Tip</h3>
+                <p>Use the "Quick Help" cursor (question mark in the top right) and hover over any control to learn what it does.</p>
+            </div>
+        </section>
+
+        <section id="recording" class="card">
+            <h2>Recording Basics: Capture Great Sound</h2>
+            <p>Follow these tips to ensure your recordings sound clean and professional.</p>
+            
+            <div class="step">
+                <h3>1. Prepare Your Space</h3>
+                <p>Find a quiet room with minimal background noise. Record in a carpeted room with soft furnishings to reduce echo.</p>
+            </div>
+            
+            <div class="step">
+                <h3>2. Position Your Microphone</h3>
+                <p>For vocals and acoustic instruments, position the microphone about 6-12 inches from the sound source. Experiment to find the sweet spot.</p>
+            </div>
+            
+            <div class="step">
+                <h3>3. Set Proper Levels</h3>
+                <p>Adjust your input volume so that your loudest passages don't cause clipping (distortion), but you have a strong signal. Aim for peaks around -6dB to -3dB.</p>
+            </div>
+            
+            <div class="step">
+                <h3>4. Use a Metronome</h3>
+                <p>Always record with a metronome or click track to ensure your part will align with others in the final mix.</p>
+            </div>
+            
+            <div class="step">
+                <h3>5. Do Multiple Takes</h3>
+                <p>Record several takes of your part. You can choose the best one later or compile the best sections from different takes.</p>
+            </div>
+            
+            <div class="tip-box">
+                <h3>Essential Gear</h3>
+                <p>While professional microphones are great, you can achieve excellent results with smartphone recordings or a basic USB microphone like the Blue Yeti or Audio-Technica ATR2100x.</p>
+            </div>
+        </section>
+
+        <section id="mixing" class="card">
+            <h2>Mixing Techniques: Blend Your Tracks</h2>
+            <p>Mixing is the process of balancing all the individual tracks to create a cohesive final product.</p>
+            
+            <div class="step">
+                <h3>1. Balance Volume Levels</h3>
+                <p>Start by adjusting the volume faders so all parts can be heard clearly. The most important elements (like melody) should be most prominent.</p>
+            </div>
+            
+            <div class="step">
+                <h3>2. Panning for Space</h3>
+                <p>Use panning to position instruments in the stereo field. For example, pan guitars slightly left and right, keep bass and vocals centered.</p>
+            </div>
+            
+            <div class="step">
+                <h3>3. Basic EQ</h3>
+                <p>Use EQ to reduce frequencies that clash between instruments. For example, reduce low frequencies on guitars to make room for the bass.</p>
+            </div>
+            
+            <div class="step">
+                <h3>4. Add Effects</h3>
+                <p>Use reverb to create a sense of space and delay for creative effects. Use these sparingly - a little goes a long way!</p>
+            </div>
+            
+            <div class="step">
+                <h3>5. Reference Other Songs</h3>
+                <p>Compare your mix to professional recordings in a similar style. This helps you identify areas for improvement.</p>
+            </div>
+            
+            <div class="tip-box">
+                <h3>Mixing Checklist</h3>
+                <ul>
+                    <li>Can I hear all the important parts clearly?</li>
+                    <li>Does the mix sound balanced in headphones and speakers?</li>
+                    <li>Is there any distortion or clipping?</li>
+                    <li>Does it sound good at different volume levels?</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Virtual Ensemble Project Resource Hub &copy; 2023 Mrs. Burnie</p>
+            <p>For educational use only</p>
+        </div>
+    </footer>
+</body>
+</html>
